@@ -9,8 +9,11 @@ alias dcb='docker compose build'
 alias dcu='docker compose up'
 alias dcd='docker compose down'
 alias dck='docker compose kill'
-alias diru='docker image prune'
-alias dvru='docker volume rm $(docker volume ls -qf dangling=true)'
+alias dsac='docker stop $(docker ps -a -q)'
+alias drac='docker rm $(docker ps -a -q)'
+
+alias dip='docker image prune -a'
+alias dvp='docker volume prune -a'
 
 # VPN
 alias surf='sudo surfshark-vpn'
