@@ -3,6 +3,7 @@
 
 # My Utilities.
 alias suu='sudo apt update -y && sudo apt full-upgrade -y'
+alias getusers="cut -d: -f1 /etc/passwd"
 
 # Docker
 alias dcb='docker compose build'
@@ -26,12 +27,10 @@ alias ldir='ls -d */'
 alias lf='ls -lah | grep -v '^d''
 
 # My functions
-
 # Prints all PATH directories in nicer format
 ppath() {
     echo -e "${PATH//:/'\n'}"
 }
-
 
 # Quick password generator utility.
 genpswd() {
@@ -46,3 +45,4 @@ else
 echo 'Enter one number that indicates the length of the expected password!'
 fi
 }
+
