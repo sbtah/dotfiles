@@ -17,8 +17,8 @@ sudo apt install stow
 ## Instalation
 First, checkout the dotfiles repo in your $HOME directory using git.
 ```
-$ git clone git@github.com:sbtah/dotfiles.git
-$ cd dotfiles
+git clone git@github.com:sbtah/dotfiles.git
+cd dotfiles
 ```
 
 Next, use GNU Stow to create symlinks.
