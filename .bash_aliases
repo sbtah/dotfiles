@@ -4,6 +4,7 @@
 # My Utilities.
 alias suu='sudo apt update -y && sudo apt full-upgrade -y'
 alias getusers="cut -d: -f1 /etc/passwd"
+alias python="python3"
 
 # Docker
 alias dcb='docker compose build'
