@@ -19,7 +19,7 @@ config.initial_rows = 50
 -- This is where you actually apply your config choices
 -- For example, changing the color scheme:
 
-
+--config.color_scheme = 'Catppuccin Mocha'
 --config.color_scheme = 'Molokai (Gogh)'
 --config.color_scheme = 'Material Darker (base16)'
 --config.color_scheme = 'Tinacious Design (Dark)'
