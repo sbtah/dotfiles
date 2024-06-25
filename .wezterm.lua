@@ -1,16 +1,6 @@
 -- Pull in the wezterm API
 local wezterm = require 'wezterm'
 
-local mux = wezterm.mux
-local act = wezterm.action
-
-
---wezterm.on('gui-startup', function()
--- local tab, pane, window = mux.spawn_window({})
--- window:gui_window():maximize()
---end)
-
-
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 config.initial_cols = 230
@@ -24,7 +14,7 @@ config.initial_rows = 50
 --config.color_scheme = 'Material Darker (base16)'
 --config.color_scheme = 'Tinacious Design (Dark)'
 --config.color_scheme = 'Urple (Gogh)'
-config.color_scheme = 'Dracula' 
+config.color_scheme = 'Dracula'
 --config.color_scheme = 'Batman'
 --config.color_scheme = 'Panda (Gogh)'
 --config.color_scheme = 'Vice Dark (base16)'
@@ -32,7 +22,6 @@ config.color_scheme = 'Dracula'
 
 
 config.font_size = 12.0
-config.window_background_opacity = 1.0
 config.font = wezterm.font 'JetBrainsMonoNl Nerd Font'
 config.use_fancy_tab_bar = false
 config.show_tabs_in_tab_bar = false
@@ -44,5 +33,6 @@ config.tiling_desktop_environments = {
   'X11 i3',
   'X11 dwm',
 }
+
 -- and finally, return the configuration to wezterm
 return config
