@@ -2,7 +2,6 @@
 
 
 # My Utilities.
-alias suu='sudo apt update -y && sudo apt full-upgrade -y'
 alias getusers="cut -d: -f1 /etc/passwd"
 alias python="python3"
 
@@ -44,6 +43,15 @@ print("".join([random.choice(string.punctuation + string.ascii_letters) for x in
 END
 else
 echo 'Enter one number that indicates the length of the expected password!'
+fi
+}
+
+
+# Update packages
+function suu {
+sudo apt update -y && sudo apt full-upgrade -y
+if [[ -f /var/run/reboot-required ]]; then
+    reboot
 fi
 }
 
