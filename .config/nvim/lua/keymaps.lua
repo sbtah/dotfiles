@@ -2,6 +2,7 @@ local keymap = vim.keymap
 
 -- Custom
 keymap.set({'n', 'v'}, '<leader>y', [["+y]]) -- yank to clipboard
+keymap.set('n', '<Leader>wt', [[:%s/\s\+$//e<cr>]]) -- Trim whitespace
 
 -- Telescope
 keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, {})
