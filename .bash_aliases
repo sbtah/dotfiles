@@ -12,11 +12,19 @@ alias dcd='docker compose down'
 alias dck='docker compose kill'
 # Stop all containers:
 alias dsac='docker stop $(docker ps -a -q)'
-# Remove al containers:
+# Remove all containers:
 alias drac='docker rm $(docker ps -a -q)'
-
+# Remove all images:
 alias dip='docker image prune -a'
+# Remove all volumes:
 alias dvp='docker volume prune -a'
+
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
 
 
 # My listings
