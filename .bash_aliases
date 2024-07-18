@@ -4,6 +4,7 @@
 # My Utilities.
 alias getusers="cut -d: -f1 /etc/passwd"
 alias python="python3"
+alias vim="nvim"
 
 # Docker:
 alias dcb='docker compose build'
@@ -88,4 +89,4 @@ function ex {
         echo "'$1' is not a valid file!"
     fi
 }
-
+export PATH="$PATH:/opt/nvim-linux64/bin"

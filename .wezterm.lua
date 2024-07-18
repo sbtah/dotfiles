@@ -15,6 +15,7 @@ config.initial_rows = 50
 --config.color_scheme = 'Tinacious Design (Dark)'
 --config.color_scheme = 'Urple (Gogh)'
 config.color_scheme = 'Dracula'
+--config.color_scheme = 'Tokyo Night Moon'
 --config.color_scheme = 'Batman'
 --config.color_scheme = 'Panda (Gogh)'
 --config.color_scheme = 'Vice Dark (base16)'
