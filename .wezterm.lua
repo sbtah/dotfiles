@@ -20,6 +20,7 @@ config.color_scheme = 'Dracula'
 --config.color_scheme = 'Panda (Gogh)'
 --config.color_scheme = 'Vice Dark (base16)'
 --config.color_scheme = 'Rapture'
+--config.color_scheme = 'Poimandres'
 
 
 config.font_size = 12.0
@@ -29,10 +30,7 @@ config.show_tabs_in_tab_bar = false
 config.show_new_tab_button_in_tab_bar = false
 config.window_decorations = "RESIZE"
 config.tiling_desktop_environments = {
-  'X11 LG3D',
-  'X11 bspwm',
   'X11 i3',
-  'X11 dwm',
 }
 
 -- and finally, return the configuration to wezterm

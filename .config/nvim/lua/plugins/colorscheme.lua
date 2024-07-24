@@ -12,3 +12,10 @@ return {
         vim.cmd.colorscheme "tokynight-moon"
     end
 }
+
+-- return {
+--     { 'olivercederborg/poimandres.nvim' }, {"LazyVim/LazyVim", opts = { colorscheme = "poimandres", lazy = false, priority = 1000}},
+--     config = function()
+--     vim.cmd("colorscheme poimandres")
+--     end
+-- }
