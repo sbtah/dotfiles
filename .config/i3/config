@@ -19,7 +19,6 @@ font pango:JetBrainsMonoNl Nerd Font 8
 # Backgroud:
 # exec_always --no-startup-id feh --bg-scale /usr/share/xfce4/backdrops/W1.jpeg
 
-
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
