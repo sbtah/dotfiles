@@ -213,7 +213,7 @@ for_window [class="^.*"] border pixel 1
 
 # Move window to next output.
 # class                 border  bground text    indicator child_border
-client.focused          #77ED9A #77ED9A #000000 #77ED9A   #77ED9A
+client.focused          #8533FF #8533FF #000000 #8533FF   #8533FF
 client.focused_inactive #333333 #5F676A #FFFFFF #484E50   #5F676A
 client.unfocused        #333333 #222222 #FFFFFF #292D2E   #222222
 client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
