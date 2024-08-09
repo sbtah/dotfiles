@@ -1,10 +1,10 @@
 vim.cmd("set list")
-vim.cmd("set listchars=space:·,tab:->\"")
+vim.cmd('set listchars=space:·,tab:->"')
 
 local opt = vim.opt
 
 -- Session Management
-opt.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
 -- Wildmenu
 opt.wildmenu = true
@@ -37,13 +37,12 @@ opt.cursorline = true
 -- Appearance
 opt.termguicolors = true
 opt.signcolumn = "yes"
-vim.diagnostic.config {
-  float = { border = "rounded" }, -- add border to diagnostic popups
-}
+vim.diagnostic.config({
+	float = { border = "rounded" }, -- add border to diagnostic popups
+})
 
 -- Backspace
 opt.backspace = "indent,eol,start"
 
 -- Clipboard
 opt.clipboard:append("unnamedplus")
-
