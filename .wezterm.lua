@@ -1,5 +1,5 @@
 -- Pull in the wezterm API
-local wezterm = require 'wezterm'
+local wezterm = require("wezterm")
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
@@ -9,29 +9,27 @@ config.initial_rows = 50
 -- This is where you actually apply your config choices
 -- For example, changing the color scheme:
 
---config.color_scheme = 'Catppuccin Mocha'
---config.color_scheme = 'Molokai (Gogh)'
---config.color_scheme = 'Material Darker (base16)'
---config.color_scheme = 'Tinacious Design (Dark)'
---config.color_scheme = 'Urple (Gogh)'
---config.color_scheme = 'Dracula'
---config.color_scheme = 'Tokyo Night Moon'
---config.color_scheme = 'Batman'
---config.color_scheme = 'Panda (Gogh)'
---config.color_scheme = 'Vice Dark (base16)'
---config.color_scheme = 'Rapture'
-config.color_scheme = 'Poimandres'
-
+--config.color_scheme = "Catppuccin Mocha"
+--config.color_scheme = "Molokai (Gogh)"
+--config.color_scheme = "Material Darker (base16)"
+--config.color_scheme = "Tinacious Design (Dark)"
+--config.color_scheme = "Dracula"
+--config.color_scheme = "Tokyo Night Moon"
+--config.color_scheme = "Batman"
+config.color_scheme = "Panda (Gogh)"
+--config.color_scheme = "Vice Dark (base16)"
+--config.color_scheme = "Rapture"
+--config.color_scheme = 'Poimandres'
 
 config.font_size = 12.0
-config.font = wezterm.font 'JetBrainsMono Nerd Font'
+config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.use_fancy_tab_bar = false
 config.show_tabs_in_tab_bar = false
 config.show_new_tab_button_in_tab_bar = false
 config.window_decorations = "RESIZE"
---config.tiling_desktop_environments = {
---  'X11 i3',
---}
+config.tiling_desktop_environments = {
+	"X11 i3",
+}
 
 -- and finally, return the configuration to wezterm
 return config
