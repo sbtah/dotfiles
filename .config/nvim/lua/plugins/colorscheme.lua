@@ -17,21 +17,21 @@
 --}
 
 -- Pomandres:
--- return {
--- 	{ "olivercederborg/poimandres.nvim" },
--- 	{ "LazyVim/LazyVim", opts = { colorscheme = "poimandres", lazy = false, priority = 1000 } },
--- 	config = function()
--- 		vim.cmd("colorscheme poimandres")
--- 	end,
--- }
-
 return {
-	{ "sainnhe/everforest" },
-	{ "LazyVim/LazyVim", opts = { colorscheme = "everforest", lazy = false, priority = 1000 } },
+	{ "olivercederborg/poimandres.nvim" },
+	{ "LazyVim/LazyVim", opts = { colorscheme = "poimandres", lazy = false, priority = 1000 } },
 	config = function()
-		-- Optionally configure and load the colorscheme
-		-- directly inside the plugin declaration.
-		vim.g.everforest_enable_italic = true
-		vim.cmd.colorscheme("everforest")
+		vim.cmd("colorscheme poimandres")
 	end,
 }
+
+-- return {
+-- 	{ "sainnhe/everforest" },
+-- 	{ "LazyVim/LazyVim", opts = { colorscheme = "everforest", lazy = false, priority = 1000 } },
+-- 	config = function()
+-- 		-- Optionally configure and load the colorscheme
+-- 		-- directly inside the plugin declaration.
+-- 		vim.g.everforest_enable_italic = true
+-- 		vim.cmd.colorscheme("everforest")
+-- 	end,
+-- }
