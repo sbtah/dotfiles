@@ -1,10 +1,11 @@
 -- Pull in the wezterm API
 local wezterm = require("wezterm")
+local mux = wezterm.mux
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
-config.initial_cols = 230
-config.initial_rows = 50
+--config.initial_cols = 230
+--config.initial_rows = 50
 
 -- This is where you actually apply your config choices
 -- For example, changing the color scheme:
@@ -34,9 +35,14 @@ config.use_fancy_tab_bar = false
 config.show_tabs_in_tab_bar = false
 config.show_new_tab_button_in_tab_bar = false
 config.window_decorations = "RESIZE"
-config.tiling_desktop_environments = {
-	"X11 i3",
-}
+--config.tiling_desktop_environments = {
+--  "X11 i3",
+--}
+
+wezterm.on("gui-startup", function(cmd)
+  local tab, pane, window = mux.spawn_window(cmd or {})
+  window:gui_window():maximize()
+end)
 
 -- and finally, return the configuration to wezterm
 return config
