@@ -122,4 +122,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # Path for nvim executable.
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"

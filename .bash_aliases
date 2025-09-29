@@ -1,10 +1,11 @@
 #!/bin/bash
 
 
-# My Utilities.
+# My Coding Utilities.
 alias getusers="cut -d: -f1 /etc/passwd"
 alias python="python3"
 alias vim="nvim"
+alias rf="ruff format"
 
 # Docker:
 alias dcb='docker compose build'
