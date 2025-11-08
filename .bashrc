@@ -122,4 +122,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # Path for nvim executable.
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+# Rust cargo:
 #. "$HOME/.cargo/env"
+
+
+# Go binary:
+export PATH=$PATH:/usr/local/go/bin
